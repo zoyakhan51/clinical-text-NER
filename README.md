@@ -13,6 +13,7 @@ I then fine tuned Bio_ClinicalBERT, which is pretraind on clinical text specific
 The dataset is MACCROBAT ~200 annotated clinical case reports covering 41 BIO tagged entity types. This is too small of a dataset to train anything from scratch, making it a clean test of exactly the impact pretraining has in a low data clinical setting.
 
 ## Approach
+Dataset: https://doi.org/10.6084/m9.figshare.9764942
 - Built a transformer encoder from scratch (multi-head self-attention, 
   feedforward, pre-norm residual blocks), no pretrained weights
 - Fine-tuned Bio_ClinicalBERT on the identical data split and label set
